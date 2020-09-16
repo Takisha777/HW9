@@ -11,12 +11,30 @@ let arr = [ "Винница", "Днепр", "Донецк",
     "Сумы", "Тернополь", "Ужгород",
     "Харьков", "Херсон", "Хмельницкий",
     "Черкассы", "Чернигов", "Черновцы"];
-
+let elementValue;
+let elementInput = document.createElement("INPUT");
+elementInput.setAttribute("type","text");
+document.body.appendChild(elementInput);
 html = '<ul>';
 arr.forEach(function(item) {
-    html += '<li>'+item+'</li>';
+    html += '<li>' + item + '</li>';
 });
 html += '</ul>'
 document.write(html);
+// function checkCity () {
+//     elementInput = document.querySelector('input');
+//     elementValue = elementInput.value;
+//     arr.forEach(function (item)
+//     {
+//         // console.log(item);
+//         if (item.includes(elementValue)) {
+//             html += '<li>' + '<strong>' + item + '</strong>' + '</li>';
+//             document.write(html);
+//         }
+//     });
+// }
+//
+//
+// // setInterval(checkCity, 1000);
 
-document.querySelectorAll('li');
+
